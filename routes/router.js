@@ -7,8 +7,9 @@ const authController = require('../controllers/authController')
 router.get('/index2',(req,res)=>{
     res.render('index2', {alert:false})
 })
-router.get('/', authController.isAuthenticated,(req,res)=>{
-    res.render('index',{user:req.user})
+//Abajo va estp ,authController.isAuthenticated, y index 1 no dos
+router.get('/',(req,res)=>{
+    res.render('reparacion',{user:req.user})
  })
  router.get('/login',(req,res)=>{
     res.render('login', {alert:false})
@@ -20,6 +21,9 @@ router.get('/recibos',authController.isAuthenticated,(req,res)=>{
     res.render('recibos',{user:req.user})
 })
 
+// router.get('/reparacion',authController.isAuthenticated,(req,res)=>{
+//     res.render('reparacion',{user:req.user})
+// })
 //rutas para los metodos controller
 router.post('/register',authController.register)
  module.exports = router
