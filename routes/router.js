@@ -4,12 +4,12 @@ const router = express.Router()
 const authController = require('../controllers/authController')
 
 //Rutas para las vistas
-router.get('/index2',(req,res)=>{
-    res.render('index2', {alert:false})
+router.get('/panel',authController.isAuthenticated,(req,res)=>{
+    res.render('panel', {user:req.user})
 })
 //Abajo va estp ,authController.isAuthenticated, y index 1 no dos
 router.get('/',(req,res)=>{
-    res.render('reparacion',{user:req.user})
+    res.render('index',{user:req.user})
  })
  router.get('/login',(req,res)=>{
     res.render('login', {alert:false})
@@ -25,7 +25,7 @@ router.get('/recibos',authController.isAuthenticated,(req,res)=>{
 //     res.render('reparacion',{user:req.user})
 // })
 //rutas para los metodos controller
-router.post('/register',authController.register)
+ router.post('/register',authController.register)
  module.exports = router
 
  router.post('/login',authController.login)
