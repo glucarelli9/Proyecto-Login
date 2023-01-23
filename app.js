@@ -10,14 +10,20 @@ app.set('view engine','ejs')
 
 //seteamos la carpeta public para archivos estaticos
 app.use(express.static('public'))
+app.get("/legajo", legajo);
 
 // Para procesar datos enviados desde froms
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
+//Funcion
+function legajo (peticion, resultado)
+{
+    resultado.sendFile(__dirname + "/public/html/legajo.html");
+}
 
 //Iniciamos Favicon
-app.use(favicon(__dirname + 'public/img/favicon.ico'));
+app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 
 

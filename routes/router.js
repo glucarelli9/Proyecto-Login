@@ -21,6 +21,9 @@ router.get('/recibos',authController.isAuthenticated,(req,res)=>{
     res.render('recibos',{user:req.user})
 })
 
+// RENDERIZAMOS LEGAJO
+
+
 // router.get('/reparacion',authController.isAuthenticated,(req,res)=>{
 //     res.render('reparacion',{user:req.user})
 // })
