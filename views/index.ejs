@@ -12,7 +12,9 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="css/aos/aos.css" rel="stylesheet">
@@ -31,7 +33,7 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= NAVBAR ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
@@ -42,10 +44,26 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <!-- 
-          <li><a class="nav-link scrollto" href="#services">Productos</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+          <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+          <li class="dropdown"><a href="/vidrios">Vidrios</a>
+          <ul>
+            <li><a href="/dvh">DVH</a></li>
+          </ul>
+          </li>
+
+          <li class="dropdown"><a href="#">Perfileria</a>
+          <ul>
+            <li><a class="nav-link scrollto" href="/Aluminio">Aluminio</a></li>
+            <li><a class="nav-link scrollto" href="/pvc">PVC</a></li>
+         
+          </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#portfolio">Obras</a></li>
+          <li><a class="nav-link scrollto" href="/contacto">Contacto</a></li>
+          <li><a class="getstarted scrollto" href="/login">Usuarios</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+
+          <!--           
           <li class="dropdown"><a href="#"><span>Productos</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Vidrios</a></li>
@@ -53,103 +71,154 @@
                 <ul>
                   <li><a href="#">Aluminio</a></li>
                   <li><a href="#">PVC</a></li>
-                  <!-- <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
                   <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li> -->
+                  <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li> 
-              <!-- <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 2</a></li>
               <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li> -->
+              <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li> 
-          <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Obras</a></li>
-          <li><a class="nav-link scrollto" href="#team">Vendedores</a></li>
-          
-          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-         
-          <li><a class="getstarted scrollto" href="/login">Usuarios</a></li>
-          
-          
+          </li>  -->
+
+
+
+
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= FOTOS COMIENZO Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1 class="logo me-auto" >CASTELLANI</h1>
+
+    <div id="slider">
+      <figure>
+          <img src="https://i.imgur.com/Gr2ztHk.jpg" alt="1">
+        <img src="https://i.imgur.com/mRTQZWI.jpg" alt="2">
+        <img src="https://i.imgur.com/A6V73gw.jpg" alt="3">
+        <img src="https://i.imgur.com/8wscpFy.jpg" alt="4">
+        <img src="https://i.imgur.com/EZUqEsj.jpg" alt="5">
+    
+       
+      </figure>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-10 d-flex flex-column justify-content-center pt-5 pt-lg-0 order-2 order-lg-1"
+        data-aos="fade-up" data-aos-delay="400">
+
+        <!-- <h1 class="logo me-auto" >CASTELLANI</h1>
+ <hr>
           <h2>Contamos con más de 80 años de historia, trabajando en el mercado junto a las industrias, empresas y familias de Salta y Jujuy.</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started scrollto">Conocenos</a>
-            <a href="https://www.youtube.com/watch?v=KIrWOQxRWN0" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Mira un video</span></a>
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="img/index2/hero-img.png" class="img-fluid animated" alt="">
-        </div>
+            <a href="https://www.youtube.com/watch?v=KIrWOQxRWN0" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Mira un video</span></a> -->
+
+
+
+
+
       </div>
     </div>
+    <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="img/index2/hero-img.png" class="img-fluid animated" alt="">
+        </div> -->
+    </div>
+    </div>
 
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="img/index2/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="img/index2/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="img/index2/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="img/index2/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="img/index2/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="img/index2/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Cliens Section -->
-
-    <!-- ======= About Us Section ======= -->
+    <!-- ======= SECCION ACERCA DE NOSOTROS ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Acerca de la Empresa</h2>
+          <h2>NOSOTROS</h2>
         </div>
-<br>
-        <div class="row content">
+        <p style="font-size: larger">
+          Somos una empresa con más de 80 años de historia. Comenzamos siendo la primera vidriería de Salta, y con
+          esfuerzo
+          y perseverancia, nos especializamos en instalaciones de vidrios, carpintería de aluminio y aberturas de PVC.
+        </p>
+        <br>
+
+        <div class="d-flex justify-content-center aos-init aos-animate">
+          <ul>
+            <sup>+</sup>
+            <div class="contador ocultar">
+              <div class="contador_cantidad" data-cantidad-total="3800">
+               <b>0</b>
+              </div>
+            </div>
+            Planchas de<br>Vidrio laminado
+          </ul>
+          <ul>
+           </ul>
+          <ul>
+            <sup>+</sup>
+            <div class="contador ocultar">
+              <div class="contador_cantidad" data-cantidad-total="1000">
+                0
+              </div>
+            </div>
+            <p style="font-size: medium;">Panchas de<br>Vidrio Float</p>
+          </ul>
+          <ul>
+            
+           </ul>
+          <ul>
+            <sup>+</sup>
+            <div class="contador ocultar">
+              <div class="contador_cantidad" data-cantidad-total="1000">
+                0
+              </div>
+            </div>
+            Tiras de<br>aluminio
+          </ul>
+          <ul>
+            
+           </ul>
+          <ul>
+            <sup>+</sup>
+            <div class="contador ocultar">
+              <div class="contador_cantidad" data-cantidad-total="2000">
+                0
+              </div>
+            </div>
+            Tiras de<br>PVC
+          </ul>
+         <ul>
+          
+         </ul>
+          <ul>
+            <sup>+</sup>
+            <div class="contador ocultar">
+              <div class="contador_cantidad" data-cantidad-total="3000">
+                0
+              </div>
+             
+            </div>
+            Proyectos <br> Terminados
+        </div>
+        
+        </ul>
+
+        <!-- <div class="row content">
           <div class="col-lg-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Somos una empresa con más de 80 años de historia. Comenzamos siendo la primera vidriería de Salta, y con esfuerzo
+              y perseverancia, nos especializamos en instalaciones de vidrios, carpintería de aluminio y aberturas de PVC.
             </p>
             <ul>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
@@ -165,122 +234,94 @@
             </p>
             <a href="#" class="btn-learn-more">Learn More</a>
           </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-            </div>
-
-            <div class="accordion-list">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("img/index2/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-        </div>
+        </div> -->
 
       </div>
     </section>
+    <!-- End About Us Section -->
+
+    <!-- ======= TRABAJAMOS EN TODO EL PAÍS
+ Section ======= -->
+    <!-- <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="row">
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+            <div class="content">
+              
+              <h3> <strong style="font-size: 80%; color: red; padding-bottom: 40%;"> </strong></h3>
+              <div class="section-title">
+                <h2>TRABAJAMOS EN TODO EL PAÍS </h2>
+                <p style="font-size: 100%;">
+                  Nuestro éxito está relacionado con varios factores, ninguno aleatorio; el más destacable es nuestro
+                  equipo de trabajo, desde el personal de obra, que en su gran mayoría está hace años, hasta nuestros
+                  profesionales capacitados y con gran experiencia en el campo de la construcción. Juntos dan como
+                  resultado un producto de excelencia.
+                </p>
+                <br>
+                <h4><a href="#portfolio" class="btn-get-started scrollto">[>] NUESTRAS OBRAS</a>
+                </h4>
+              </div>
+            </div>
+            <br>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+            style='background-image: url("img/index2/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section> -->
     <!-- End Why Us Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
+    <section id="about" class="about section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="img/index2/skills.png" class="img-fluid" alt="">
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="img/index2/why-us.png" id="mapa" style="animation: up-down 2s ease-in-out infinite alternate-reverse both;" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+          <div class="col-lg-5 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <div class="section-title">
+              <h2><br><br>TRABAJAMOS EN TODO EL PAÍS </h2>
+            <p class="fst-italic" style="font-size: larger;">
+              Nuestro éxito está relacionado con varios factores, ninguno aleatorio; el más destacable es nuestro
+              equipo de trabajo, desde el personal de obra, que en su gran mayoría está hace años, hasta nuestros
+              profesionales capacitados y con gran experiencia en el campo de la construcción. Juntos dan como
+              resultado un producto de excelencia.
             </p>
-
+            </div>
             <div class="skills-content">
-
-              <div class="progress">
-                <span class="skill">HTML <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">CSS <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Photoshop <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
+              <br>
+              <h4><a href="#portfolio" class="btn-get-started scrollto text-center">[>] NUESTRAS OBRAS</a>
+              </h4>
             </div>
 
           </div>
         </div>
 
       </div>
-    </section><!-- End Skills Section -->
+    </section> 
+    <!-- End Skills Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <!-- ======= SECCION DE SERVICIOS ======= -->
+    <!-- <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -324,115 +365,162 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    End Services Section -->
 
     <!-- ======= Cta Section ======= -->
-    <!-- <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
+   
     <!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- ======= OBRAS Y FOROS SECCION ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Obras</h2>
-          <p>Un recorrido por algunas de nuestras tantas obras realizadas en la región.
-            </p>
+          <h2>NUESTRO TRABAJO NOS DEFINE</h2>
+          <p style="font-size: larger">Nos motiva brindar un servicio diferenciado. Tratamos siempre de que nuestros clientes sientan alivio y
+            tranquilidad
+            de que su proyecto será ejecutado con el detalle y cuidado que merece. Por todo esto, siempre administramos
+            los recursos,
+            tanto materiales como así también mano de obra.
+          </p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">Edificio Alvear</li>
-          <li data-filter=".filter-card">Casa San Lorenzo</li>
-          <li data-filter=".filter-web">Mirador del Tineo</li>
+          <li data-filter="*" class="filter-active">OBRAS</li>
+          <!-- <li data-filter=".filter-app">EDIFICIOS</li>
+          <li data-filter=".filter-card">PARTICULARES</li>
+          <li data-filter=".filter-web">ESPECIALES</li> -->
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+        <!-- 1 VICENTE LOPEZ -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="img/index2/obrasimg/alvear_obra(1).jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="https://i.imgur.com/J0inDXp.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Edificio Alvear</h4>
-              <p></p>
-              <a href="img/index2/obrasimg/alvear_obra(1).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Edificio Alvear"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="img/index2/obrasimg/miradortineo1.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Mirador del Tineo </h4>
-              <p>Mirador del Tineo</p>
-              <a href="img/index2/obrasimg/miradortineo1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Mirador del Tineo 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="img/index2/obrasimg/alvear_obra(2).jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Edificio Alvear 2</h4>
+              <h4>Edificio Vicente Lopez</h4>
               <p>Edificio</p>
-              <a href="img/index2/obrasimg/alvear_obra(2).jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Edificio 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="https://i.imgur.com/J0inDXp.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Edificio 2"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon>
+              </a>
+             
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="img/index2/obrasimg/obra2san.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Casa San Lorenzo 2</h4>
-              <p>Casa San Lorenzo</p>
-              <a href="img/index2/obrasimg/obra2san.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Casa San Lorenzo 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
+  
+          <!-- EL PUNTO  -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="img/index2/obrasimg/miradortineo2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="https://i.imgur.com/coDzDuR.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Mirador del Tineo 2</h4>
-              <p>Mirador del Tineo</p>
-              <a href="img/index2/obrasimg/miradortineo2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Mirador del Tineo 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>EL PUNTO</h4>
+              <p>EL PUNTO SAN LORENZO CHICO</p>
+              <a href="https://i.imgur.com/coDzDuR.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="EL PUNTO - SAN LORENZO CHICO"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
+            </div>
+          </div>
+          <!--3 Edificio Vicente Lopez -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="https://i.imgur.com/pjibdnx.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Edificio Vicente Lopez</h4>
+              <p>Edificio</p>
+              <a href="https://i.imgur.com/pjibdnx.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Edificio 2"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
+              
             </div>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="img/index2/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="img/index2/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div> -->
-
+  <!--3 Edificio Vicente Lopez -->
+  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+    <div class="portfolio-img"><img src="https://i.imgur.com/IHnqH92.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-info">
+      <h4>Edificio Vicente Lopez</h4>
+      <p>Edificio</p>
+      <a href="https://i.imgur.com/IHnqH92.jpg" data-gallery="portfolioGallery"
+        class="portfolio-lightbox preview-link" title="Edificio 2"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
+      
+    </div>
+  </div>
+<!-- FIN -->
+  <!--3 Edificio Vicente Lopez -->
+  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+    <div class="portfolio-img"><img src="https://i.imgur.com/V9jqQj1.jpg" class="img-fluid" alt=""></div>
+    <div class="portfolio-info">
+      <h4>Edificio Vicente Lopez</h4>
+      <p>Edificio</p>
+      <a href="https://i.imgur.com/V9jqQj1.jpg" data-gallery="portfolioGallery"
+        class="portfolio-lightbox preview-link" title="Edificio 2"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
+      
+    </div>
+  </div>
+<!-- FIN -->
+<!-- SAN MOI -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="img/index2/obrasimg/obra2san2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="https://i.imgur.com/R2YcIfv.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Casa San Lorenzo</h4>
-              <p>Casa</p>
-              <a href="img/index2/obrasimg/obra2san2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Casa San Lorenzo"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>MOOI</h4>
+              <p>ALTO NOA - MOI</p>
+              <a href="https://i.imgur.com/R2YcIfv.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="ALTO NOA - MOI"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
             </div>
           </div>
-
+<!-- FIN -->
+<!-- SAN MOI-->
+<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+  <div class="portfolio-img"><img src="https://i.imgur.com/5H2uMwW.jpg" class="img-fluid" alt=""></div>
+  <div class="portfolio-info">
+    <h4>MOOI</h4>
+    <p>ALTO NOA - MOI</p>
+    <a href="https://i.imgur.com/5H2uMwW.jpg" data-gallery="portfolioGallery"
+      class="portfolio-lightbox preview-link" title="ALTO NOA - MOI"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
+  </div>
+</div>
+<!-- FIN -->
+<!-- SAN LO -->
+<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+  <div class="portfolio-img"><img src="https://i.imgur.com/68ryWS6.jpg" class="img-fluid" alt=""></div>
+  <div class="portfolio-info">
+    <h4>MOOI</h4>
+    <p>ALTO NOA - MOI</p>
+    <a href="https://i.imgur.com/68ryWS6.jpg" data-gallery="portfolioGallery"
+      class="portfolio-lightbox preview-link" title="ALTO NOA - MOI"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
+  </div>
+</div>
+<!-- FIN -->
+<!-- INICIO CASA -->
+<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+  <div class="portfolio-img"><img src="https://i.imgur.com/nd3TQNM.jpg" class="img-fluid" alt=""></div>
+  <div class="portfolio-info">
+    <h4>Casa Particular</h4>
+    <p>Casa</p>
+    <a href="https://i.imgur.com/nd3TQNM.jpg" data-gallery="portfolioGallery"
+      class="portfolio-lightbox preview-link" title="Casa"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
+    <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+  </div>
+</div>
+<!-- 2 -->
+<!-- INICIO CASA -->
+<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+  <div class="portfolio-img"><img src="https://i.imgur.com/3foXj03.jpg" class="img-fluid" alt=""></div>
+  <div class="portfolio-info">
+    <h4>Casa Particular</h4>
+    <p>Casa</p>
+    <a href="https://i.imgur.com/3foXj03.jpg" data-gallery="portfolioGallery"
+      class="portfolio-lightbox preview-link" title="Casa"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
+    <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+  </div>
+</div>
+<!-- 2 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="https://i.imgur.com/VMI4oX9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Casa Particular</h4>
+              <p>Casa</p>
+              <a href="https://i.imgur.com/VMI4oX9.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Casa"><iconify-icon icon="line-md:image-twotone" width="30" height="30"></iconify-icon></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+<!-- FIN -->
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-img"><img src="img/index2/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
@@ -456,10 +544,49 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
+    <!-- ======= MARCAS Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>NUESTROS PROVEEDORES</h2>
+        </div>
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/index2/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/index2/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/index2/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/index2/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/index2/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/index2/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Cliens Section -->
+
+    <!-- ======= EQIPO Section ======= -->
+    <!-- <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -520,7 +647,7 @@
             </div>
           </div>
 
-          <!-- <div class="col-lg-6 mt-4">
+          <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
               <div class="pic"><img src="img/index2/team/team-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
@@ -535,14 +662,16 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
 
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section> -->
 
-    <!-- ======= Pricing Section ======= -->
+    <!-- End Team Section -->
+
+    <!-- ======= sector de precios Section ======= -->
     <!-- <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
 
@@ -604,8 +733,8 @@
     </section> -->
     <!-- End Pricing Section -->
 
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+    <!-- ======= preguntas frecuentes ======= -->
+    <!-- <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -658,16 +787,17 @@
                   Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
                 </p>
               </div>
-            </li>
-
+            </li> 
+            
           </ul>
         </div>
 
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section> -->
+    <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -733,9 +863,12 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section> -->
 
-  </main><!-- End #main -->
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -793,7 +926,7 @@
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Redes Sociales</h4>
-            <p>Ser una empresa líder, sólida, confiable, con rentabilidad sostenida y en continuo crecimiento en el mercado que participamos, que se distinga por proporcionar una calidad de productos y servicios de excelencia a sus clientes.</p>
+            
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -821,8 +954,9 @@
     </div>
   </footer><!-- End Footer -->
 
- 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="css/aos/aos.js"></script>
@@ -837,5 +971,51 @@
   <script src="js/main.js"></script>
 
 </body>
+<!-- Scrip para el conteo -->
+<script>
+  addEventListener('DOMContentLoaded', () => {
+    const contadores = document.querySelectorAll('.contador_cantidad');
+    const velocidad = 1000;
 
+    const animarContadores = () => {
+      for (const contador of contadores) {
+        const actualizar_contador = () => {
+          let cantidad_maxima = +contador.dataset.cantidadTotal,
+            valor_actual = +contador.innerText,
+            incremento = cantidad_maxima / velocidad;
+          if (valor_actual < cantidad_maxima) {
+            contador.innerText = Math.ceil(valor_actual + incremento)
+            setTimeout((actualizar_contador), 5);
+          } else {
+            contador.innerText = cantidad_maxima;
+
+          }
+        }
+        actualizar_contador();
+      }
+    }
+
+    const mostrarContadores = elementos => {
+      elementos.forEach(element => {
+        if (element.isIntersecting) {
+          element.target.classList.add('animar');
+          element.target.classList.remove('ocultar');
+          setTimeout(animarContadores, 300)
+        }
+      });
+    }
+
+    const observer = new IntersectionObserver(mostrarContadores, {
+      threshold: 0.75 //0 - 1 
+    })
+
+    const elementosHTML = document.querySelectorAll('.contador')
+    elementosHTML.forEach(elementoHTML => {
+      observer.observe(elementoHTML)
+    })
+
+  })
+</script>
+<!-- scrip iconos -->
+<script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 </html>
